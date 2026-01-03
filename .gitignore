@@ -2,10 +2,16 @@
 /data/
 data/
 
-# Environment variables
+# Environment variables and secrets
 .env
 .env.*
 !.env.example
+secrets.*
+*secrets*.json
+*secret*.json
+credentials.*
+credentials.json
+config_local.*
 
 # Python cache
 __pycache__/
@@ -13,6 +19,9 @@ __pycache__/
 *$py.class
 *.so
 .Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
 # Virtual environments
 .venv/
@@ -24,10 +33,12 @@ env/
 .ipynb_checkpoints/
 *.ipynb_checkpoints
 
-# Logs
+# Logs and temporary files
 *.log
 /logs/
 logs/
+tmp/
+scratch/
 
 # OS files
 .DS_Store
@@ -38,29 +49,13 @@ logs/
 ehthumbs.db
 Thumbs.db
 
-# Downloaded data files in reports
-/reports/whitepaper/sources/
-reports/whitepaper/sources/
-
-# Credential files
-*.pem
-*.key
-*.crt
-secrets.*
-*secrets*.json
-*secret*.json
-credentials.*
-credentials.json
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# Keep reports/figures and reports/whitepaper (markdown/tex/pdf drafts)
-# Only ignore sources subdirectories
+# Database files
+*.sqlite
+*.db
+*.parquet
+*.feather
+*.pkl
+*.joblib
 
 # Postgres dumps and backups
 *.sql.dump
@@ -71,3 +66,26 @@ credentials.json
 *.backup.gz
 pg_dump_*
 postgres_backup_*
+
+# Credential files
+*.pem
+*.key
+*.crt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Reports: keep figures, ignore PDFs and source data
+/reports/whitepaper/sources/
+reports/whitepaper/sources/
+reports/**/*.pdf
+*.pdf
+!reports/whitepaper/*.pdf
+
+# Google Drive sync metadata (if any)
+.gdrive/
+.drive/
