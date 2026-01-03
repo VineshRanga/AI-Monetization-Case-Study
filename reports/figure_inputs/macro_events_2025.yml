@@ -1,0 +1,68 @@
+# Macro events for 2025 overlay chart
+# Schema:
+#   id: unique identifier
+#   date: ISO date string (YYYY-MM-DD) for single-day events
+#   start_date/end_date: ISO date strings for spans
+#   label: display text
+#   category: policy, trade, supply_chain, election, rates
+#   render: vertical_line | shaded_span
+#   color: optional hex color (default: red for vertical, light red for spans)
+#   linestyle: optional (default: ':' for vertical, '-' for spans)
+#   alpha: optional (default: 0.6 for vertical, 0.15 for spans)
+
+events:
+  - id: fed_cut_sep
+    date: "2025-09-17"
+    label: "Fed target range set to 4.00–4.25%"
+    category: rates
+    render: vertical_line
+    color: "#DC143C"
+    linestyle: ":"
+    alpha: 0.6
+
+  - id: fed_cut_oct
+    date: "2025-10-29"
+    label: "Fed target range set to 3.75–4.00%"
+    category: rates
+    render: vertical_line
+    color: "#DC143C"
+    linestyle: ":"
+    alpha: 0.6
+
+  - id: fed_cut_dec
+    date: "2025-12-10"
+    label: "Fed target range set to 3.50–3.75%"
+    category: rates
+    render: vertical_line
+    color: "#DC143C"
+    linestyle: ":"
+    alpha: 0.6
+
+  - id: chip_tariff
+    date: "2025-08-07"
+    label: "US chip tariff proposal headline"
+    category: trade
+    render: vertical_line
+    color: "#DC143C"
+    linestyle: ":"
+    alpha: 0.6
+
+  - id: canada_election
+    date: "2025-04-28"
+    label: "Canada federal election"
+    category: election
+    render: vertical_line
+    color: "#DC143C"
+    linestyle: ":"
+    alpha: 0.6
+
+ 
+  - id: dram_squeeze
+    start_date: "2025-12-01"
+    end_date: "2025-12-15"
+    label: "AI-driven DRAM squeeze (memory price surge)"
+    category: supply_chain
+    render: shaded_span
+    color: "#FF6B6B"
+    alpha: 0.15
+

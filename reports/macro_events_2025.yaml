@@ -1,0 +1,73 @@
+# Macro events for 2025 overlay chart
+# Schema:
+#   date: "YYYY-MM-DD"
+#   label: short label (<= 28 chars)
+#   category: one of ["RATES","TARIFFS","ELECTION","SUPPLY_CHAIN"]
+#   detail: optional longer text (not always shown)
+#   priority: 1-3 (1 = show label on chart, 2 = marker only, 3 = omit by default)
+#   source: citation/URL (optional)
+
+events:
+  - date: "2025-01-20"
+    label: "POTUS Inauguration"
+    category: "ELECTION"
+    priority: 1
+    detail: "Trump inaugurated for second term"
+    source: "US Constitution, 20th Amendment"
+  
+  - date: "2025-04-02"
+    label: "US reciprocal tariffs"
+    category: "TARIFFS"
+    priority: 1
+    detail: "US reciprocal tariff order on Chinese semiconductors"
+    source: "Reuters/White House EO coverage, 2025-04-02"
+
+  - date: "2025-04-28"
+    label: "Canada federal election"
+    category: "ELECTION"
+    priority: 1
+    detail: "Canada federal election date"
+    source: "Elections Canada official schedule"
+
+  - date: "2025-06-04"
+    label: "US metals tariffs 50%"
+    category: "TARIFFS"
+    priority: 1
+    detail: "US aluminum/steel tariffs raised to 50%"
+    source: "Reuters coverage on 50% aluminum/steel tariffs, 2025-06-04"
+
+  - date: "2025-09-17"
+    label: "FOMC cut: 4.00–4.25%"
+    category: "RATES"
+    priority: 1
+    detail: "Fed target range set to 4.00–4.25%"
+    source: "Federal Reserve FOMC minutes, 2025-09-17"
+
+  - date: "2025-10-29"
+    label: "FOMC cut: 3.75–4.00%"
+    category: "RATES"
+    priority: 1
+    detail: "Fed target range set to 3.75–4.00%"
+    source: "Federal Reserve FOMC minutes, 2025-10-29"
+
+  - date: "2025-11-10"
+    label: "Aluminum premium spike"
+    category: "SUPPLY_CHAIN"
+    priority: 2
+    detail: "Aluminum premium spikes on tariffs/squeeze"
+    source: "Reuters commodity coverage, 2025-11-10"
+
+  - date: "2025-12-11"
+    label: "FOMC cut: 3.50–3.75%"
+    category: "RATES"
+    priority: 1
+    detail: "Fed target range set to 3.50–3.75%"
+    source: "Federal Reserve FOMC minutes, 2025-12-11"
+
+  - date: "2025-12-15"
+    label: "AI HBM/DRAM tightness"
+    category: "SUPPLY_CHAIN"
+    priority: 2
+    detail: "AI-driven HBM/DRAM tightness from demand surge"
+    source: "TrendForce memory market analysis, 2025-12-15"
+

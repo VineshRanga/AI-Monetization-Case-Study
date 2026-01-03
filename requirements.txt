@@ -1,0 +1,16 @@
+# added in Prompt 1
+requests
+python-dotenv
+pandas
+numpy
+psycopg2-binary
+SQLAlchemy
+tqdm
+# added in Prompt 5
+xgboost
+shap
+scikit-learn
+# added for visualization
+matplotlib
+# added for macro events YAML loading
+pyyaml>=6.0

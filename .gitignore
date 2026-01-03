@@ -1,0 +1,73 @@
+# Data directories
+/data/
+data/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Logs
+*.log
+/logs/
+logs/
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Downloaded data files in reports
+/reports/whitepaper/sources/
+reports/whitepaper/sources/
+
+# Credential files
+*.pem
+*.key
+*.crt
+secrets.*
+*secrets*.json
+*secret*.json
+credentials.*
+credentials.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Keep reports/figures and reports/whitepaper (markdown/tex/pdf drafts)
+# Only ignore sources subdirectories
+
+# Postgres dumps and backups
+*.sql.dump
+*.dump
+*.backup
+*.sql.gz
+*.dump.gz
+*.backup.gz
+pg_dump_*
+postgres_backup_*
