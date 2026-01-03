@@ -2,7 +2,7 @@
 
 ## White paper (recommended first read)
 
-https://drive.google.com/file/d/1pGrnov81NwIWtIy9rizEYThn0-TT1ioS/view?usp=sharing
+Whitepaper PDF: https://drive.google.com/file/d/1pGrnov81NwIWtIy9rizEYThn0-TT1ioS/view?usp=sharing
 
 The white paper PDF is attached to the repo release or available locally if kept in the repo. For full methodology, chart interpretations, and scenario analysis, read the white paper first.
 
